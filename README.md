@@ -9,4 +9,5 @@ If you don't have an ingredient, tap its name and it will move to the "Unavailab
 removing that ingredient from any other potions' ingredients list as well.
 
 TO-DO: Find reliable data on potion values bc official wiki is not accurate
+
 TO-DO: Account for multiple effects in one potion (for example, Blue Mtn Flower + Blue Butterfly Wing have two effects in common).
