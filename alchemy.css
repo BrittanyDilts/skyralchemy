@@ -1,0 +1,63 @@
+body {
+	font-family: sans-serif;
+	max-width: 75rem;
+	padding: 1.5rem;
+}
+
+h1 {
+	margin: 0 0 0.75rem;
+	text-align: center;
+}
+
+.subheader {
+	font-size: 0.75rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.all-concoctions {
+	list-style-type: none;
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+	margin-top: 0;
+}
+
+h3 {
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+h4 {
+	margin-bottom: 0.5rem;
+}
+
+p.instructions::before {
+	content: "Tap";
+}
+
+@media (min-width: 1025px) {
+	p.instructions::before {
+		content: "Click";
+	}
+}
+
+.ingredients, .unavailable-ingredients {
+	list-style-type: none;
+	padding-left: 1rem;
+}
+
+.ingredients li, .unavailable-ingredients li {
+	padding: 0.85rem 0;
+}
+
+.d-none {
+	display: none;
+}
+
+.order-last {
+	order: 99;
+}

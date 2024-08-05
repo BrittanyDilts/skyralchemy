@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="alchemy.css" />
+<body>
+
+<h1>Skyralchemy</h1>
+<div class="subheader">Ingredient optimization</div>
+<p class="information">Ingredients from Dragonborn and Dawnguard DLC are included. Creation Club ingredients are excluded for the time being.</p>
+<p class="instructions"> ingredient names to toggle them between available and unavailable status.</p>
+<h3>
+	Unavailable Ingredients 
+	<button class="toggle-ingredients-list-button">
+		<span class="toggle-ingredients-list">Hide</span>
+		<span class="toggle-ingredients-list d-none">Show</span>
+	</button></h3>
+<ul class="unavailable-ingredients toggle-ingredients-list"></ul>
+
+<h3>Potions</h3>
+<ul class="all-concoctions"></ul>
+
+
+</body>
+<footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="alchemy.js"></script>
+</footer>
+</html>
