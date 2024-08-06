@@ -2,6 +2,8 @@ body {
 	font-family: sans-serif;
 	max-width: 75rem;
 	padding: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h1 {

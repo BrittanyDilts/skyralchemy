@@ -16,9 +16,9 @@ Some Lingering potions are *, enduring, lasting, persisting, unceasing
 /* 
 	concoctions obj keys: {type, name, effect, gold, dlc}
 */
-const concoctions = [
-	{type: "Potion", name: "Potion of Cure Disease", effect: "Cure Disease", gold: [79]},
-	{type: "Potion", name: "Potion of Alteration", effect: "Fortify Alteration", gold: [49, 106, 165, 227]},
+const oldConcoctions = [
+	{type: "Potion", basegold: 79, name: "Potion of Cure Disease", effect: "Cure Disease", gold: [79]},
+	{type: "Potion", basegold: 49, name: "Potion of Alteration", effect: "Fortify Alteration", gold: [49, 106, 165, 227]},
 	{type: "Potion", name: "Potion of Haggling", effect: "Fortify Barter", gold: [84, 131, 180, 230]},
 	{type: "Potion", name: "Potion of the Defender", effect: "Fortify Blocking", gold: [45, 70, 96, 123]},
 	{type: "Potion", name: "Potion of Strength", effect: "Fortify Carry Weight", gold: [170, 266, 365, 467, 571]},
@@ -67,6 +67,63 @@ const concoctions = [
 	{type: "Poison", name: "Aversion to Magic", effect: "Weakness to Magic", gold: [193, 274, 358, 443, 530]},
 	{type: "Poison", name: "Aversion to Shock", effect: "Weakness to Shock", gold: [193, 274, 358, 443, 530]}
 ];
+
+
+
+const concoctions = [
+{basegold: 6, type: "Poison", effect: "Lingering Damage Stamina", name: "Lingering Stamina Poison"},
+{basegold: 10, type: "Poison", effect: "Lingering Damage Magicka", name: "Lingering Magicka Poison"},
+{basegold: 12, type: "Poison", effect: "Lingering Damage Health", name: "Lingering Poison"},
+{basegold: 17, type: "Potion", effect: "Restore Health", name: "Potion or Healing"},
+{basegold: 20, type: "Potion", effect: "Restore Magicka", name: "Potion of Magicka"},
+{basegold: 20, type: "Potion", effect: "Restore Stamina", name: "Potion of Stamina"},
+{basegold: 31, type: "Potion", effect: "Well-being", name: "Potion of Well-being"},
+{basegold: 45, type: "Potion", effect: "Fortify Blocking", name: "Potion of the Defender"},
+{basegold: 45, type: "Potion", effect: "Fortify Heavy Armor", name: "Potion of the Knight"},
+{basegold: 45, type: "Potion", effect: "Fortify Light Armor", name: "Skirmisher's Potion"},
+{basegold: 45, type: "Potion", effect: "Fortify Lockpicking", name: "Potion of Lockpicking"},
+{basegold: 45, type: "Potion", effect: "Fortify Sneak", name: "Potion of Light Feet"},
+{basegold: 46, type: "Potion", effect: "Waterbreathing", name: "Potion of Waterbreathing"},
+{basegold: 49, type: "Potion", effect: "Fortify Alteration", name: "Potion of Alteration"},
+{basegold: 54, type: "Potion", effect: "Fortify Enchanting", name: "Enchanter's Potion"},
+{basegold: 58, type: "Potion", effect: "Fortify Magicka", name: "Potion of Extra Magicka"},
+{basegold: 58, type: "Poison", effect: "Damage Health", name: "Poison"},
+{basegold: 67, type: "Potion", effect: "Fortify Health", name: "Potion of Health"},
+{basegold: 67, type: "Potion", effect: "Fortify Smithing", name: "Blacksmith's Potion"},
+{basegold: 74, type: "Poison", effect: "Damage Stamina Regen", name: "Vigor Poison"},
+{basegold: 75, type: "Poison", effect: "Damage Stamina", name: "Stamina Poison"},
+{basegold: 79, type: "Potion", effect: "Cure Disease", name: "Potion of Cure Disease"},
+{basegold: 79, type: "Poison", effect: "Damage Magicka Regen", name: "Magicka Recovery Poison"},
+{basegold: 84, type: "Potion", effect: "Fortify Barter", name: "Potion of Haggling"},
+{basegold: 88, type: "Poison", effect: "Frenzy", name: "Frenzy Poison"},
+{basegold: 90, type: "Potion", effect: "Resist Magic", name: "Potion of Resist Magic"},
+{basegold: 92, type: "Poison", effect: "Damage Magicka", name: "Magicka Poison"},
+{basegold: 96, type: "Potion", effect: "Fortify Conjuration", name: "Conjurer's Potion"},
+{basegold: 96, type: "Potion", effect: "Fortify Destruction", name: "Potion of Destruction"},
+{basegold: 96, type: "Potion", effect: "Fortify Marksman", name: "Potion of True Shot"},
+{basegold: 96, type: "Potion", effect: "Fortify One-Handed", name: "Potion of the Warrior"},
+{basegold: 96, type: "Potion", effect: "Fortify Pickpocket", name: "Potion of Pickpocketing"},
+{basegold: 96, type: "Potion", effect: "Fortify Restoration", name: "Potion of the Healer"},
+{basegold: 96, type: "Potion", effect: "Fortify Two-Handed", name: "Potion of the Berserker"},
+{basegold: 96, type: "Potion", effect: "Resist Fire", name: "Potion of Resist Fire"},
+{basegold: 96, type: "Potion", effect: "Resist Frost", name: "Potion of Resist Cold"},
+{basegold: 96, type: "Poison", effect: "Weakness to Frost", name: "Aversion to Frost"},
+{basegold: 98, type: "Poison", effect: "Fear", name: "Fear Poison"},
+{basegold: 99, type: "Potion", effect: "Fortify Illusion", name: "Potion of Illusion"},
+{basegold: 116, type: "Poison", effect: "Weakness to Fire", name: "Aversion to Fire"},
+{basegold: 132, type: "Poison", effect: "Paralysis", name: "Paralysis Poison"},
+{basegold: 170, type: "Potion", effect: "Fortify Carry Weight", name: "Potion of Strength"},
+{basegold: 193, type: "Poison", effect: "Weakness to Magic", name: "Aversion to Magic"},
+{basegold: 193, type: "Poison", effect: "Weakness to Shock", name: "Aversion to Shock"},
+{basegold: 214, type: "Potion", effect: "Invisibility", name: "Potion of Invisibility"},
+{basegold: 311, type: "Potion", effect: "Regenerate Health", name: "Potion of Regeneration"},
+{basegold: 311, type: "Potion", effect: "Regenerate Magicka", name: "Potion of Lasting Potency"},
+{basegold: 311, type: "Potion", effect: "Regenerate Stamina", name: "Potion of Vigor"},
+{basegold: 341, type: "Potion", effect: "Fortify Stamina", name: "Potion of Enhanced Stamina"}
+]
+
+
+
 
 /* 
 	concoctions obj keys: {name, effects, dlc}
@@ -211,7 +268,7 @@ function loadLists() {
 	allConcoctions.innerHTML = "";
 	unavailableIngredients.innerHTML = "";
 
-	_.orderBy(concoctions, ["gold[0]"], ["desc"]).forEach((c) => {
+	_.orderBy(concoctions, ["basegold"], ["desc"]).forEach((c) => {
 		let item = document.createElement("li");
 		let potionName = document.createElement("h4");
 		potionName.innerHTML = c.name;
