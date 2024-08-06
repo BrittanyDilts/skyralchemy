@@ -63,3 +63,19 @@ p.instructions::before {
 .order-last {
 	order: 99;
 }
+
+.turnoff-all-ingredients-button {
+	margin-bottom: 1.5rem;
+}
+
+.dragonborn {
+	background-color: peru;
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+}
+
+.dawnguard {
+	background-color: darkgray;
+	padding-left: 3px !important;
+	padding-right: 3px !important;
+}
