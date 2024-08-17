@@ -6,14 +6,33 @@
 <link rel="stylesheet" href="alchemy.css" />
 <body>
 
-<h1>Skyralchemy</h1>
+<h1><a id="top"></a>Skyralchemy</h1>
 <div class="subheader">Ingredient optimization</div>
-<p class="information">Ingredients from <span class="dragonborn">Dragonborn</span> and <span class="dawnguard">Dawnguard</span> DLC are included. Creation Club ingredients are excluded for the time being.</p>
-<p class="instructions"> ingredient names to move them from the potions ingredients to unavailable and vice-versa.</p>
-<p class="order-note">Note: the potions are ordered by value, assuming that two-effect potions will be more valuable than single-effect potions. It is advisable to scroll through the list to ensure you haven't missed any two-effect potions.</p>
+
+<p><span class="instructions"> ingredient names to move them from the potions ingredients to unavailable and vice-versa.</span></p>
+
+<p><span class="instructions"> DLC name to hide all ingredients from that DLC.</span></p>
+<ul class="included-dlc">
+	<li class="hide-dlc dragonborn">Dragonborn</li>
+	<li class="hide-dlc dawnguard">Dawnguard</li>
+	<li class="hide-dlc creation-club">Creation Club</li>
+	<li class="hide-dlc caco vanilla-d-none">CACO</li>
+</ul>
+
+<button class="use-caco-mod">I use the Complete Alchemy and Cooking Overhaul (CACO) mod</button>
+
+<h4>Notes</h4>
+<p class="note">If you have SE, you have Dragonborn and Dawnguard DLCs. If you have AE, you have all three DLCs.</p>
+<p class="note caco-d-none">The potions are ordered by value, and assumes that two-effect potions will be more valuable than single-effect potions. This isn't always the case, though. I can't give you ALL the answers. </p>
+<div class="vanilla-d-none">
+	<p class="note">The potions are ordered by value when created with the most potent ingredients. Refresh to return to vanilla ingredients and potions.</p>
+	<p class="note">The blue dots indicate effect potency. The first effect on an ingredient is the most potent, the second effect less so, on through the fourth. The saturation of the indicator lets you know how potent an effect will be. </p>
+	<p class="note">If there are two effects, the first dot corresponds to the first effect listed, and the second dot to the second effect listed.</p>
+	<p class="note">PLEASE BE ADVISED: There are much higher rates of variation in the resulting potions than vanilla alchemy. Play around with the most expensive ingredients and the most potent ingredients.</p>
+</div>
 <div>
 	<button class="turnoff-all-ingredients-button">
-		<span>I want to add only the ingredients in my inventory</span>
+		<span>Add ingredients from my inventory</span>
 	</button>
 </div>
 <h3>
@@ -29,6 +48,9 @@
 <h3>Potions</h3>
 <ul class="all-concoctions"></ul>
 
+<div class="back-to-top-btn">
+<a href="#top">Back to top</a>
+</div>
 
 </body>
 <footer>
