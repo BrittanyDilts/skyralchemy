@@ -8,6 +8,6 @@ The app is intended to order the potions by most valuable (ergo, giving the most
 If you don't have an ingredient, tap its name and it will move to the "Unavailable Ingredients" list (which can be hidden if it gets too long), 
 removing that ingredient from any other potions' ingredients list as well.
 
-TO-DO: Find reliable data on potion values bc official wiki is not accurate
+TO-DO: Add search bar
 
-TO-DO: Account for multiple effects in one potion (for example, Blue Mtn Flower + Blue Butterfly Wing have two effects in common).
+TO-DO: Implement outlier ingredients on CACO view
